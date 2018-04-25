@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PortManager.AdvancedControls.ControlModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,14 +10,14 @@ using System.Windows.Media;
 
 namespace PortManager.AdvancedControls
 {
-    public class AdvancedButton : Button
+    public class AdvancedButton : Grid
     {
-        public AdvancedButton()
+        public AdvancedButton(ButtonModel buttonModel)
         {
-            Background = new SolidColorBrush(Color.FromRgb(57, 85, 135));
-            Opacity = 0.8;
-            Foreground = Brushes.White;
-         
+            
+            Image icon = new Image();
+            Label text = new Label();
+            TextBox textBox = new TextBox();
         }
     }
 }

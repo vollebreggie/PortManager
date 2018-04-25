@@ -15,3 +15,35 @@ c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortMana
 c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\bin\Debug\Newtonsoft.Json.xml
 c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
 c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\PortManager_MarkupCompile.lref
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager.exe
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager.pdb
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager.csprojResolveAssemblyReference.cache
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\App.baml
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\MainWindow.g.cs
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\App.g.cs
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager_Content.g.cs
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager_MarkupCompile.cache
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager_MarkupCompile.lref
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\x86\e_sqlite3.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\x64\e_sqlite3.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\PortManager.exe.config
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\PortManager.exe
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\PortManager.pdb
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\FirstFloor.ModernUI.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLite-net.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLiteNetExtensions.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLiteNetExtensionsAsync.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\FirstFloor.ModernUI.xml
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLite-net.pdb
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLite-net.xml
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLiteNetExtensions.pdb
+C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\SQLiteNetExtensionsAsync.pdb
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\MainWindow.baml
+C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager.g.resources

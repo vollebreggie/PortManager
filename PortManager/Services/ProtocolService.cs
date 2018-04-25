@@ -1,5 +1,4 @@
-﻿using PortManager.Protocols;
-using PortManager.Reader;
+﻿using PortManager.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

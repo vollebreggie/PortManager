@@ -1,4 +1,5 @@
-﻿using PortManager.Services;
+﻿using PortManager.Models;
+using PortManager.Services;
 using System;
 using System.Collections.Generic;
 using System.IO.Ports;
@@ -11,8 +12,8 @@ namespace PortManager.Managers
     public class PortService
     {
         private SerialPort _ComPort;
-        private Reader.Protocol _SelectedReader;
-        private string _SelectedProtocol;
+        private Protocol _SelectedProtocol;
+        private Component _SelectedComponent;
         private ProtocolService _ReaderService;
 
         public PortService()
@@ -34,12 +35,12 @@ namespace PortManager.Managers
 
         public void SendData(string text)
         {
-            _ComPort.Write(_SelectedReader.Serialize(_SelectedProtocol, text));
+            _ComPort.Write(_SelectedProtocol.Serialize(_SelectedComponent.Name, text));
         }
 
         private void port_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            Console.WriteLine(_SelectedReader.Serialize(_SelectedProtocol, _ComPort.ReadLine()));
+            Console.WriteLine(_SelectedProtocol.Serialize(_SelectedComponent.Name, _ComPort.ReadLine()));
         }
 
     }
