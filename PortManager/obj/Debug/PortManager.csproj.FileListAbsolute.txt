@@ -1,0 +1,17 @@
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\bin\Debug\PortManager.exe
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\bin\Debug\PortManager.pdb
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\bin\Debug\FirstFloor.ModernUI.dll
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\bin\Debug\FirstFloor.ModernUI.xml
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\PortManager.csprojResolveAssemblyReference.cache
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\MainWindow.baml
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\App.baml
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\MainWindow.g.cs
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\App.g.cs
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\PortManager_MarkupCompile.cache
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\PortManager.g.resources
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\PortManager.exe
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\PortManager.pdb
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\bin\Debug\Newtonsoft.Json.dll
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\bin\Debug\Newtonsoft.Json.xml
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\m.vollebregt\documents\visual studio 2015\Projects\PortManager\PortManager\obj\Debug\PortManager_MarkupCompile.lref
