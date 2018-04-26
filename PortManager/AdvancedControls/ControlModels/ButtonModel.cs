@@ -12,6 +12,7 @@ namespace PortManager.AdvancedControls.ControlModels
     {
         string name;
         ImageSource image;
+        Brush color;
 
         public string Name
         {
@@ -26,11 +27,24 @@ namespace PortManager.AdvancedControls.ControlModels
             }
         }
 
+        public Brush Color
+        {
+            get { return color; }
+            set
+            {
+                if (color != value)
+                {
+                    color = value;
+                    RaisePropertyChanged("Color");
+                }
+            }
+        }
+
         public ImageSource Image
         {
             get { return Image; }
             set
-            {
+            { 
                 if (image != value)
                 {
                     image = value;
@@ -38,6 +52,6 @@ namespace PortManager.AdvancedControls.ControlModels
                 }
             }
         }
-
+        
     }
 }

@@ -11,9 +11,9 @@ namespace PortManager.AdvancedControls.ControlModels
     {
         string labelText;
         string text;
-        Color labelColor;
+        Brush labelColor;
 
-        public Color LabelColor
+        public Brush LabelColor
         {
             get { return labelColor; }
             set

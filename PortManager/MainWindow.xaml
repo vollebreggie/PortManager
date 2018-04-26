@@ -11,35 +11,8 @@
         <ListBox x:Name="portList" HorizontalAlignment="Left" Height="179" Margin="72,77,0,0" VerticalAlignment="Top" Width="156"/>
         <ListBox x:Name="protocolList" HorizontalAlignment="Left" Height="183" Margin="253,73,0,0" VerticalAlignment="Top" Width="176"/>
         <ListBox x:Name="ComponentList" HorizontalAlignment="Left" Height="189" Margin="454,77,0,0" VerticalAlignment="Top" Width="171"/>
-        <controls:AdvancedButton x:Name="connectButton"  Content="Connect" HorizontalAlignment="Left" Height="62" Margin="72,330,0,0" VerticalAlignment="Top" Width="123">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </controls:AdvancedButton>
-        <controls:AdvancedButton x:Name="sendButton" Content="Send" HorizontalAlignment="Left" Height="62" Margin="228,330,0,0" VerticalAlignment="Top" Width="136">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </controls:AdvancedButton>
-        <controls:AdvancedButton x:Name="importProtocolButton" Content="Import Protocol" HorizontalAlignment="Left" Height="62" Margin="438,330,0,0" VerticalAlignment="Top" Width="127">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </controls:AdvancedButton>
-        <controls:AdvancedButton x:Name="exportProtocolButton" Content="Export Protocol" HorizontalAlignment="Left" Height="62" Margin="592,330,0,0" VerticalAlignment="Top" Width="127">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="7"/>
-                </Style>
-            </Button.Resources>
-        </controls:AdvancedButton>
-        <Grid HorizontalAlignment="Left" Height="323" Margin="842,69,0,0" VerticalAlignment="Top" Width="298"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="193" Margin="690,73,0,0" VerticalAlignment="Top" Width="200"/>
+      
+        <Grid x:Name="testGrid" HorizontalAlignment="Left" Height="323" Margin="842,69,0,0" VerticalAlignment="Top" Width="298"/>
+        <Grid x:Name="replaceGrid" HorizontalAlignment="Left" Height="74" Margin="72,373,0,0" VerticalAlignment="Top" Width="323"/>
     </Grid>
 </mui:ModernWindow>

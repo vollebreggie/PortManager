@@ -90,6 +90,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AdvancedControls\AdvancedButton.cs" />
+    <Compile Include="AdvancedControls\AdvancedDataGrid.cs" />
     <Compile Include="AdvancedControls\AdvancedTextbox.cs" />
     <Compile Include="AdvancedControls\ControlModels\BasicControlModel.cs" />
     <Compile Include="AdvancedControls\ControlModels\ButtonModel.cs" />
