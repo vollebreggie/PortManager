@@ -91,9 +91,11 @@
     </ApplicationDefinition>
     <Compile Include="AdvancedControls\AdvancedButton.cs" />
     <Compile Include="AdvancedControls\AdvancedDataGrid.cs" />
+    <Compile Include="AdvancedControls\AdvancedListItem.cs" />
     <Compile Include="AdvancedControls\AdvancedTextbox.cs" />
     <Compile Include="AdvancedControls\ControlModels\BasicControlModel.cs" />
     <Compile Include="AdvancedControls\ControlModels\ButtonModel.cs" />
+    <Compile Include="AdvancedControls\ControlModels\ItemModel.cs" />
     <Compile Include="AdvancedControls\ControlModels\TextBoxModel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -111,6 +113,7 @@
     <Compile Include="Models\Component.cs" />
     <Compile Include="Models\Protocol.cs" />
     <Compile Include="AdvancedControls\ControlModels\FacadeModel.cs" />
+    <Compile Include="Services\DataService.cs" />
     <Compile Include="Services\REST\DynamicRESTService.cs" />
     <Compile Include="Services\REST\IRESTService.cs" />
     <Compile Include="Services\ProtocolService.cs" />

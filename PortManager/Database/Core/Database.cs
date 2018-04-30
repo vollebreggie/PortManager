@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PortManager.Database
+namespace PortManager.Database.Core
 {
     public class Database
     {
@@ -22,10 +22,12 @@ namespace PortManager.Database
 
             database = new SQLiteAsyncConnection(databasePath);
 
-
-            database.GetConnection().CreateTable<Protocol>();
-            database.GetConnection().CreateTable<Component>();
             database.GetConnection().CreateTable<ResponseElement>();
+            database.GetConnection().CreateTable<RequestElement>();
+
+            database.GetConnection().CreateTable<Component>();
+            database.GetConnection().CreateTable<Protocol>();
+            
 
 
         }

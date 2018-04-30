@@ -1,5 +1,6 @@
 ﻿
 using SQLite;
+using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,22 +11,33 @@ namespace PortManager.Models
 {
     public class Protocol
     {
+
+        public Protocol()
+        {
+
+        }
+
+        public Protocol(string name)
+        {
+            Name = name;
+        }
         
         [PrimaryKey]
         public string Name { get; set; }
 
-        public List<Component> Protocols { get; set; }
+        [OneToMany(CascadeOperations = CascadeOperation.All)]
+        public List<Component> Components { get; set; }
 
         public string Serialize(string protocol, string sequence)
         {
-            Component format = Protocols.Find(x => x.Name == protocol);
+            Component format = Components.Find(x => x.Name == protocol);
             List<RequestElement> requestParts = format.Request;
             return "";
         }
 
         public string DeSerialize(string protocol, string sequence)
         {
-            Component format = Protocols.Find(x => x.Name == protocol);
+            Component format = Components.Find(x => x.Name == protocol);
             List<ResponseElement> responseParts = format.Response;
             return "";
         }

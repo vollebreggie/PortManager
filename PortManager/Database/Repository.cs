@@ -11,9 +11,9 @@ namespace PortManager.Database
 {
     public class Repository<T> : IRepository<T> where T : class, new()
     {
-        private Database database;
+        private Database.Core.Database database;
 
-        public Repository(Database database)
+        public Repository(Database.Core.Database database)
         {
             this.database = database;
         }

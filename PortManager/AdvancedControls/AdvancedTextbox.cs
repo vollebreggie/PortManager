@@ -1,4 +1,6 @@
-﻿using PortManager.AdvancedControls.ControlModels;
+﻿using PortManager.AdvancedControls;
+using PortManager.AdvancedControls.ControlModels;
+using PortManager.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +21,7 @@ namespace PortManager.AdvancedControls
             this.textBoxModel = textBoxModel;
             Width = 250;
             Height = 30;
-
+            KeyUp += TextBox_KeyUp;
             Border border = new Border()
             {
                 BorderThickness = new Thickness()
@@ -47,7 +49,7 @@ namespace PortManager.AdvancedControls
             label.HorizontalAlignment = HorizontalAlignment.Center;
             label.HorizontalContentAlignment = HorizontalAlignment.Center;
             label.VerticalContentAlignment = VerticalAlignment.Center;
-            label.FontFamily = new FontFamily("Falling sky");
+            label.FontFamily = new FontFamily("Aleo");
             label.FontSize = 15;
             label.FontStretch = FontStretches.Normal;
             //label.FontStyle = FontStyles.Oblique;
@@ -55,6 +57,10 @@ namespace PortManager.AdvancedControls
 
             TextBox textBox = new TextBox();
             textBox.SetBinding(TextBox.TextProperty, "Text");
+            textBox.FontFamily = new FontFamily("Aleo");
+            textBox.FontSize = 15;
+            
+            textBox.FontWeight = FontWeights.Bold;
             textBox.DataContext = textBoxModel;
             textBox.Width = 175;
             textBox.VerticalContentAlignment = VerticalAlignment.Center;
@@ -94,6 +100,14 @@ namespace PortManager.AdvancedControls
             {
                 textBoxModel = value;
             } }
-       
+
+        private async void TextBox_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key != System.Windows.Input.Key.Enter) return;
+            
+            Protocol protocol = new Models.Protocol(name);
+            await App.DataService.ProtocolRepository.Insert(protocol);
+        }
+
     }
 }

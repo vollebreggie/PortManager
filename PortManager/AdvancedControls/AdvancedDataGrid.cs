@@ -24,32 +24,60 @@ namespace PortManager.AdvancedControls
             this.collection = collection;
             PreviewMouseLeftButtonDown += new MouseButtonEventHandler(DataGrid_PreviewMouseLeftButtonDown);
             Drop += new DragEventHandler(productsDataGrid_Drop);
+            CellEditEnding += DataGridCellEditEnding;
             var style = new Style(typeof(DataGridColumnHeader));
-            style.Setters.Add(
-                new Setter { Property = BackgroundProperty, Value = new SolidColorBrush(Color.FromRgb(43, 86, 128)) });
-                //new Setter { Property = WidthProperty, Value =  });
-            
+            IsReadOnly = true;
+            style.Setters.Add(new Setter { Property = BackgroundProperty, Value = new SolidColorBrush(Color.FromRgb(43, 86, 128) )});
+            style.Setters.Add(new Setter { Property = ForegroundProperty, Value = Brushes.White });
+            style.Setters.Add(new Setter { Property = FontFamilyProperty, Value = new FontFamily("Aleo") });
+            //style.Setters.Add(new Setter { Property = FontSizeProperty, Value = 15 });
+            style.Setters.Add(new Setter { Property = FontWeightProperty, Value = FontWeights.Bold });
+            //new Setter { Property = WidthProperty, Value =  });
+            style.Setters.Add(new Setter { Property = VerticalContentAlignmentProperty, Value = VerticalAlignment.Center });
+            style.Setters.Add(new Setter { Property = HorizontalContentAlignmentProperty, Value = HorizontalAlignment.Center });
             DataGridTextColumn nameColumn = new DataGridTextColumn();
             nameColumn.Header = "Name";
             nameColumn.Binding = new Binding("Name");
             Columns.Add(nameColumn);
             nameColumn.CanUserSort = false;
             nameColumn.HeaderStyle = style;
-            nameColumn.Width = new DataGridLength(100, DataGridLengthUnitType.Auto);//TODO:: fix width
+            nameColumn.Foreground = Brushes.Black;
+            nameColumn.FontFamily = new FontFamily("Aleo");
+            nameColumn.FontSize = 15;
+            nameColumn.FontWeight = FontWeights.Bold;
 
+            Style columnstyle = new Style();
+            columnstyle.Setters.Add(new Setter(DataGridCell.HorizontalContentAlignmentProperty, HorizontalAlignment.Center));
+            columnstyle.Setters.Add(new Setter(DataGridCell.VerticalContentAlignmentProperty, VerticalAlignment.Center));
+            CellStyle = columnstyle;
+            //columnstyle.Setters.Add(new Setter { Property = HorizontalContentAlignmentProperty, Value = HorizontalAlignment.Center });
+            nameColumn.CellStyle = columnstyle;
+            nameColumn.Width = new DataGridLength(1, DataGridLengthUnitType.Star);
+            
+            
             DataGridTextColumn lenghtColumn = new DataGridTextColumn();
             lenghtColumn.Header = "Lenght";
             lenghtColumn.Binding = new Binding("Lenght");
+            lenghtColumn.CellStyle = columnstyle;
             Columns.Add(lenghtColumn);
             lenghtColumn.CanUserSort = false;
             AllowDrop = true;
             lenghtColumn.HeaderStyle = style;
-            lenghtColumn.Width = new DataGridLength(100, DataGridLengthUnitType.Auto);//TODO:: fix width
+            lenghtColumn.Width = new DataGridLength(1, DataGridLengthUnitType.Star);
+            //lenghtColumn.Foreground = Brushes.White;
+            //lenghtColumn.FontFamily = new FontFamily("Aleo");
+            //lenghtColumn.FontSize = 15;
+            //lenghtColumn.FontWeight = FontWeights.Bold;
 
             foreach (T item in collection)
             {
                 Items.Add(item);
             }
+        }
+
+        private void DataGridCellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            e.Cancel = true;
         }
 
         void productsDataGrid_Drop(object sender, DragEventArgs e)

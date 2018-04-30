@@ -22,7 +22,6 @@ C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\App.baml
 C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\MainWindow.g.cs
 C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\App.g.cs
 C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager_Content.g.cs
-C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager_MarkupCompile.cache
 C:\Users\mike\Desktop\PortManager\PortManager\obj\Debug\PortManager_MarkupCompile.lref
 C:\Users\mike\Desktop\PortManager\PortManager\bin\Debug\x86\e_sqlite3.dll

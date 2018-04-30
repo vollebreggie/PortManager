@@ -34,16 +34,15 @@ namespace PortManager
             AppearanceManager.Current.ThemeSource = AppearanceManager.DarkThemeSource;
             GUITitle.Title = "Protocol Thingy " + AssemblyVersion;
             PortService portService = new PortService();
-            
-            BitmapImage bi3 = new BitmapImage();
-            bi3.BeginInit();
-            bi3.UriSource = new Uri("C:\\Users\\m.vollebregt\\Desktop\\Gui\\test.PNG", UriKind.Absolute);
-            bi3.EndInit();
 
-            TextBoxModel testmodel = new TextBoxModel();
-            testmodel.LabelColor = new SolidColorBrush(Color.FromRgb(43,86,128));
-            testmodel.LabelText = "hello";
-            testmodel.Text = "bye";
+            CreateProtocol();
+
+            //BitmapImage bi3 = new BitmapImage();
+            //bi3.BeginInit();
+            //bi3.UriSource = new Uri("C:\\Users\\mike\\Desktop\\PortManager\\deleteIcon.PNG", UriKind.Absolute);
+            //bi3.EndInit();
+
+
 
             ButtonModel buttonmodel = new ButtonModel();
             buttonmodel.Color = new SolidColorBrush(Color.FromRgb(43, 86, 128));
@@ -51,7 +50,7 @@ namespace PortManager
             //buttonmodel.Image = bi3;
 
             //buttonmodel.Image 
-            replaceGrid.Children.Add(new AdvancedTextbox(testmodel));
+            
            
             ObservableCollection<RequestElement> list = new ObservableCollection<RequestElement>();
             list.Add(new RequestElement() { Name = "test1", Lenght = 4 });
@@ -59,10 +58,31 @@ namespace PortManager
             list.Add(new RequestElement() { Name = "test3", Lenght = 12 });
 
             testGrid.Children.Add(new AdvancedDataGrid<RequestElement>(list));
+            //replaceGrid.Children.Add(new AdvancedButton(buttonmodel));
         }
 
 
-        
+        private async void CreateProtocol()
+        {
+
+
+            List<Protocol> list = await App.DataService.ProtocolRepository.Get();
+
+            TextBoxModel testmodel = new TextBoxModel();
+            testmodel.LabelColor = new SolidColorBrush(Color.FromRgb(43, 86, 128));
+            testmodel.LabelText = "Name";
+            testmodel.Text = "";
+
+            ItemModel itemmodel = new ItemModel();
+            itemmodel.Color = new SolidColorBrush(Color.FromRgb(43, 86, 128));
+            itemmodel.Name = "Protocol";
+            //itemmodel.Image = blob;
+            protocolList.SetBinding(ListView.NameProperty, "Name");
+            protocolList.DataContext = await App.DataService.ProtocolRepository.Get();
+            //protocolList.Items.Add(new AdvancedListItem(itemmodel));
+            //protocolList.Items.Add(new AdvancedListItem(itemmodel));
+            protocolTextBoxGrid.Children.Add(new AdvancedTextbox(testmodel));
+        }
         public string AssemblyVersion
         {
             get

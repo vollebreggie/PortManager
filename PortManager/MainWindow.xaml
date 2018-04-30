@@ -13,6 +13,7 @@
         <ListBox x:Name="ComponentList" HorizontalAlignment="Left" Height="189" Margin="454,77,0,0" VerticalAlignment="Top" Width="171"/>
       
         <Grid x:Name="testGrid" HorizontalAlignment="Left" Height="323" Margin="842,69,0,0" VerticalAlignment="Top" Width="298"/>
-        <Grid x:Name="replaceGrid" HorizontalAlignment="Left" Height="74" Margin="72,373,0,0" VerticalAlignment="Top" Width="323"/>
+        <Grid x:Name="replaceGrid" HorizontalAlignment="Left" Height="206" Margin="72,373,0,0" VerticalAlignment="Top" Width="323"/>
+        <Grid x:Name="protocolTextBoxGrid" HorizontalAlignment="Left" Height="55" Margin="248,266,0,0" VerticalAlignment="Top" Width="181"/>
     </Grid>
 </mui:ModernWindow>

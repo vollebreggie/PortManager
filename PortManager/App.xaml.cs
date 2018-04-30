@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PortManager.Services;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,17 @@ namespace PortManager
     /// </summary>
     public partial class App : Application
     {
+        static DataService dataService;
+        public static DataService DataService
+        {
+            get
+            {
+                if (dataService == null)
+                {
+                    dataService = new DataService(new Database.Core.Database());
+                }
+                return dataService;
+            }
+        }
     }
 }
